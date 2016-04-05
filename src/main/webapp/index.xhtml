@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+	<h:head>
+	</h:head>
+	<h:body>`
+		<h:form id="myform" enctype="multipart/form-data" prependId="false">
+			<h:inputFile id="file" value="#{fileUploadBean.uploadedFile}"> 
+				<f:ajax render="@form" />
+			</h:inputFile>
+
+			<pre>#{fileUploadBean.fileText}</pre>
+
+		</h:form>
+	</h:body>
+
+</html>
